@@ -88,6 +88,8 @@ __Start the backend__: npm start
 
 + Password Hashing
 
+  ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/d23ab62d-71e9-4647-ada1-2d3ae5d922f5)
+
 + Fuzzing
 
   ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/feed1d44-0e2d-4269-aa16-fb2c9aa07e65)
