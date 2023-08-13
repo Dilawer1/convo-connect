@@ -23,7 +23,7 @@ __Database__: Mongo DB
 
 https://convo-connect.onrender.com/
 
-*There is a bit of an issue with the deployed version of the application where the chats are not being updated on-screen when sent, and the screen needs to be refreshed to see the new message. However, this is not an issue if running the project locally.*
+*There is a bit of an issue with the deployed version of the application where the chats are not being updated on-screen when sent, and the screen needs to be refreshed to see the new message, and therefore the notifications and the typing indicator do not show up. However, this is not an issue if running the project locally.*
 
 However, you can also run the project locally on your machine by following the below steps:
 
