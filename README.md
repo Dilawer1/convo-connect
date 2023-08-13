@@ -81,6 +81,8 @@ __Start the backend__: npm start
 
   ![WhatsApp Image 2023-08-13 at 22 28 08](https://github.com/Dilawer1/convo-connect/assets/38422700/d7a2ce1d-7964-4233-8c3d-d83717c26505)
 
+  *Currently this is not persistent*
+
 + Adding or Removing Users from the Group
 
   ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/9b56cc71-8b5d-4de8-82d4-65165a1eee23)
