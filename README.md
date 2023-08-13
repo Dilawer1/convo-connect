@@ -47,15 +47,15 @@ __Start the backend__: npm start
 
 ## Features
 
-+ Single chat
++ Single Chat
 
 ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/4cd28c3f-814e-4578-ac8b-c0769dd35335)
 
-+ Group chat
++ Group Chat
 
   ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/443bb8e7-5bba-4f4d-adcd-5e2f94dc41fa)
 
-+ Typing indicators
++ Typing Indicators
 
 + Authentication
 
@@ -70,21 +70,21 @@ __Start the backend__: npm start
 
   *Small issue here is the searched user result comes up as the logged-in user but it shows correctly in the chats page.*
 
-+ Creating Group chats
++ Creating Group Chats
 
   ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/5df2e86f-34a5-4f1e-9970-eeaadf2a61ef)
 
 + Notifications
 
-+ Adding or Removing users from the group
++ Adding or Removing Users from the Group
 
   ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/9b56cc71-8b5d-4de8-82d4-65165a1eee23)
 
   *The same issue as that with the search user is present here but the person is correctly picked from the database.*
 
-+ Viewing other user’s profile
++ Viewing Other User’s Profile
 
-  ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/05c7a02c-e700-48e3-b406-31abb4bd4e82)
+  ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/1ed0a1ef-2765-4f7a-a9ba-ac46c5fae567)
 
 + Password Hashing
 
