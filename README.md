@@ -57,6 +57,9 @@ __Start the backend__: npm start
 
 + Typing Indicators
 
+  ![WhatsApp Image 2023-08-13 at 22 20 51](https://github.com/Dilawer1/convo-connect/assets/38422700/b242014a-b7b2-4c06-bc3e-cd554edf8ab5)
+
+
 + Authentication
 
   ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/98da1aec-3268-4cbb-b90f-95b22c75e374)
@@ -75,6 +78,8 @@ __Start the backend__: npm start
   ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/5df2e86f-34a5-4f1e-9970-eeaadf2a61ef)
 
 + Notifications
+
+  ![WhatsApp Image 2023-08-13 at 22 28 08](https://github.com/Dilawer1/convo-connect/assets/38422700/d7a2ce1d-7964-4233-8c3d-d83717c26505)
 
 + Adding or Removing Users from the Group
 
