@@ -13,4 +13,9 @@ All previous commits can be found in these repositories.
 **This is a *real-time web chat application we have created using a few technologies such as socket.io.**
 
 ## Technologies Used
-<u>Hello</u>
+*Client*: React JS
+
+*Server*: Node JS, Express JS
+
+*Database*: Mongo DB
+
