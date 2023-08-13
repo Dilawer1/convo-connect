@@ -13,9 +13,21 @@ const app = express();
 
 app.use(express.json()); // to accept json data
 
-// app.get("/", (req, res) => {
-//   res.send("API Running!");
-// });
+// Define rate limiting and lockout parameters
+const MAX_FAILED_ATTEMPTS = 3;
+const LOCKOUT_DURATION = 5 * 60 * 1000; // 5 minutes in milliseconds
+const failedLoginAttempts = {};
+
+// Middleware for rate limiting and account lockout
+app.use("/api/user/login", (req, res, next) => {
+  const ipAddress = req.ip;
+
+  if (failedLoginAttempts[ipAddress] && Date.now() - failedLoginAttempts[ipAddress] < LOCKOUT_DURATION) {
+    return res.status(429).json({ message: 'Account locked due to multiple failed attempts. Please try again later.' });
+  }
+
+  next();
+});
 
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
@@ -26,10 +38,10 @@ app.use("/api/message", messageRoutes);
 const __dirname1 = path.resolve();
 
 if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname1, "../frontend/build")));
+  app.use(express.static(path.join(__dirname1, "/frontend/build")));
 
   app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname1, "../frontend", "build", "index.html"))
+    res.sendFile(path.resolve(__dirname1, "frontend", "build", "index.html"))
   );
 } else {
   app.get("/", (req, res) => {
@@ -54,7 +66,7 @@ const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
     origin: "http://localhost:3000",
-    // credentials: true,
+    credentials: true,
   },
 });
 
@@ -87,5 +99,5 @@ io.on("connection", (socket) => {
   socket.off("setup", () => {
     console.log("USER DISCONNECTED");
     socket.leave(userData._id);
-  });
+  });
 });
