@@ -53,6 +53,8 @@ __Start the backend__: npm start
 
 + Group chat
 
+  ![image](https://github.com/Dilawer1/convo-connect/assets/38422700/443bb8e7-5bba-4f4d-adcd-5e2f94dc41fa)
+
 + Typing indicators
 
 + Authentication
