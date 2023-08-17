@@ -6,6 +6,8 @@ const chatRoutes = require("./routes/chatRoutes");
 const messageRoutes = require("./routes/messageRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const path = require("path");
+const xss = require("xss-clean");
+const mongoSanitize = require("express-mongo-sanitize");
 
 dotenv.config();
 connectDB();
@@ -28,7 +30,8 @@ app.use("/api/user/login", (req, res, next) => {
 
   next();
 });
-
+app.use(mongoSanitize());
+app.use(xss());
 app.use("/api/user", userRoutes);
 app.use("/api/chat", chatRoutes);
 app.use("/api/message", messageRoutes);
